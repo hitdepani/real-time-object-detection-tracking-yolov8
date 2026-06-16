@@ -64,5 +64,3 @@ This application is strictly optimized for CPU usage:
 * **Missing Weights:** Upon the very first run, `yolov8n.pt` will automatically download from GitHub. Ensure an active internet connection.
 * **Low FPS:** Increase the `skip_frames` parameter in `configs/tracking_config.yaml` to `2` or `3`.
 
-## Sample Screenshots
-*(Add sample screenshots of the tracking interface here prior to final submission)*
