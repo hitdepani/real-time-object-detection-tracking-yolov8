@@ -1,0 +1,33 @@
+# configs/tracking_config.yaml - Detection and Tracking Hyperparameters
+
+# Model settings
+detector:
+  model_name: "yolov8n.pt"         # Base pre-trained model weights (nano)
+  conf_threshold: 0.25            # Minimum detection confidence score
+  iou_threshold: 0.45             # Intersection-over-Union threshold for Non-Maximum Suppression (NMS)
+  imgsz: 320                      # Square resolution to resize frames for inference (320 or 416)
+  classes:                        # COCO class indexes to detect and track
+    - 0                           # Person
+    - 2                           # Car
+    - 3                           # Motorcycle
+    - 5                           # Bus
+    - 7                           # Truck
+
+# Tracker settings (ByteTrack)
+tracker:
+  track_thresh: 0.25              # Confidence threshold to identify high-score detections
+  track_buffer: 30                # Number of frames to keep a lost track active before deletion
+  match_thresh: 0.8               # IoU threshold for matching tracks with detections
+  skip_frames: 2                  # Run inference on every N-th frame; interpolate skipped frames
+
+# Visualizer settings
+visualizer:
+  line_thickness: 2               # Thickness of drawn bounding boxes
+  font_scale: 0.5                 # Text label font scale
+  draw_trails: true               # Draw history paths behind tracked objects
+  trail_length: 30                # Maximum length of trail paths in frames
+
+# Logging and outputs
+logging:
+  save_csv: true                  # Save time-series tracking telemetry to data/logs/
+  console_verbosity: "INFO"       # Level of terminal prints (DEBUG, INFO, WARNING)

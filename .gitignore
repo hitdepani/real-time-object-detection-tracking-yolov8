@@ -1,0 +1,23 @@
+# Python compilation artifacts
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data and Logs
+outputs/
+snapshots/
+logs/
+
+# Downloaded model weights
+yolov8n.pt
+
+# IDE configurations
+.idea/
+.vscode/
+
+# OS specific generated files
+.DS_Store
