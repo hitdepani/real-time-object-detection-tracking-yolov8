@@ -131,5 +131,5 @@ python main.py --video sample_videos/test.mp4 --no-display
 
 <div align="center">
   <b>Built with ❤️ by Hit Depani</b><br>
-  <a href="https://github.com/hitdepani">GitHub Profile</a> • <a href="mailto:your.email@example.com">Contact Me</a>
+  <a href="https://github.com/hitdepani">GitHub Profile</a> • <a href="https://www.linkedin.com/in/hit-depani-3b0698367/">Contact Me</a>
 </div>
